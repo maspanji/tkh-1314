@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    File : barang.dtd
+    Deskripsi : DTD yang mendeskripsikan barang.xml
+-->
+
+<!ELEMENT barang (kategori,merk)>
+<!ELEMENT kategori (#PCDATA)>
+<!ATTLIST kategori jenisPintu CDATA "pintu geser">
+<!ELEMENT merk (#PCDATA)>

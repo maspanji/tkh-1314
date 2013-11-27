@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    File        : barang.xml
+    Deskripsi   : xml yang berisi data barang
+-->
+<!DOCTYPE barang SYSTEM "barang.dtd" >
+
+<barang>
+    <kategori jenisPintu="pintu geser">Almari</kategori>
+    <merk>VIP</merk>
+</barang>
