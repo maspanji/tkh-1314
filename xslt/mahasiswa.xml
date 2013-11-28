@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    File : mahasiswa.xml
+    Deskripsi : xml yang akan ditransformasikan ke html menggunakan xslt
+-->
+<?xml-stylesheet type="text/xsl" href="mahasiswa.xsl"?>
+<mahasiswa>
+    <nama>Fatma</nama>
+    <alamat>Semarang</alamat>
+</mahasiswa>

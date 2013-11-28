@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    File        : barang.xml
+    Deskripsi   : file data barang yang akan dibaca program PHP.
+-->
+
+<daftar-barang>
+    <barang>
+        <nama_barang kategori="makanan">Cilok</nama_barang>
+        <pemasok>CV Bandung Indah</pemasok>
+    </barang>
+    <barang>
+        <nama_barang kategori="makanan">Ganjel Rel</nama_barang>
+        <pemasok>CV Tembalang Jaya</pemasok>
+    </barang>    
+    <barang>
+        <nama_barang kategori="minuman">Bandrek</nama_barang>
+        <pemasok>CV Cimahi Permai</pemasok>
+    </barang>    
+</daftar-barang>
