@@ -1,6 +1,6 @@
 <!--
-    File : ajax_readXML.php
-    Desc : ajax membaca dokumen XML
+    File : ajax_responsexml.php
+    Deskripsi : ajax membaca dokumen XML
 -->
 <html>
     <head>
