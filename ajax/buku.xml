@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    File : buku.xml
+    Desc : daftar buku sederhana pada sebuat toko buku
+-->
+<daftarbuku>
+    <buku>
+        <judul>Aneka Resep Masakan Indonesia</judul>
+        <pengarang>Rudi Choirudin</pengarang>
+    </buku>
+    <buku>
+        <judul>Resep Sarapan Anak-Anak</judul>
+        <pengarang>Farah Queen</pengarang>
+    </buku>
+</daftarbuku>
