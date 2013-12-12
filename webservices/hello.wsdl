@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://localhost/hello" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="hello" targetNamespace="http://localhost/hello">
+  
+  <!-- informasi yang lewat client dan dan server -->
+  <wsdl:message name="sayHelloRequest">
+    <wsdl:part name="sayHelloRequest" type="xsd:string"/>
+  </wsdl:message>
+  <wsdl:message name="sayHelloResponse">
+    <wsdl:part name="sayHelloResponse" type="xsd:string"/>
+  </wsdl:message>
+  
+  <!-- fungsi yang ada serta input dan outputnya seperti apa -->
+  <wsdl:portType name="hello">
+    <wsdl:operation name="sayHello">
+      <wsdl:input message="tns:sayHelloRequest"/>
+      <wsdl:output message="tns:sayHelloResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  
+  <!-- bagaimana komunikasi dilakukan dan lokasi namespace-nya -->
+  <wsdl:binding name="helloSOAP" type="tns:hello">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="sayHello">
+      <soap:operation soapAction="http://localhost/hello/NewOperation"/>
+      <wsdl:input>
+        <soap:body namespace="http://localhost/hello" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body namespace="http://localhost/hello" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <!-- binding dan port type -->
+  <wsdl:service name="hello">
+    <wsdl:port binding="tns:helloSOAP" name="helloSOAP">
+      <soap:address location="http://localhost/tkh-1314/webservices/hello_service_wsdl.php"/>
+    </wsdl:port>
+  </wsdl:service>
+
+</wsdl:definitions>
